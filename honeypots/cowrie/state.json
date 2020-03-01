@@ -9,5 +9,6 @@
         ["HPFPORT", "10000"],
         ["HPFIDENT", "HONEYPOTID"],
         ["HPFSECRET", "HONEYPOTID"]
-    ]
+    ],
+    "channels": ["cowrie.sessions"]
 }
