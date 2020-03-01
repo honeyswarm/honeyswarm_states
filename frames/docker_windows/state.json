@@ -1,0 +1,7 @@
+{
+    "name":"Docker Windows",
+    "description":"Installs Docker for Windows with the ability to run specific Windows Honeypots",
+    "supported_os":[],
+    "frame_state_path":"docker_windows",
+    "pillar": []
+}

@@ -1,0 +1,7 @@
+{
+    "name":"Conpot",
+    "honeypot_state_file":"conpot",
+    "honey_type":"ICS",
+    "description":"Conpot is an ICS honeypot with the goal to collect intelligence about the motives and methods of adversaries targeting industrial control systems",
+    "pillar": []
+}

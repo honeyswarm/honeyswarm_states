@@ -1,0 +1,7 @@
+{
+    "name":"Docker Linux",
+    "description":"Installs Docker for Linux with the ability to run Docker based honeypots",
+    "supported_os":["Ubuntu", "Debian"],
+    "frame_state_path":"docker_linux",
+    "pillar": []
+}
