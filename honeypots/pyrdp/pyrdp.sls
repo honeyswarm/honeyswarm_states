@@ -1,8 +1,6 @@
 # Basic PyRDP Honeypot
 
-# We use a Volume mount till i can write a HPFeeds publisher for it. 
-
-# Add Pillar - 
+# HPFeeds is in, but leaving the volume mount for now as it saves the recordings.
 
 # Add the config file
 create_dir:
@@ -15,8 +13,14 @@ pyrdp_container:
   docker_container.running:
     - name: honeypot_pyrdp
     - image: gosecure/pyrdp:latest
+    - environment:
+      - HPFSERVER: {{salt['pillar.get']('HPFSERVER')}}
+      - HPFPORT: {{salt['pillar.get']('HPFPORT')}}
+      - HPFIDENT: {{salt['pillar.get']('HPFIDENT')}}
+      - HPFSECRET: {{salt['pillar.get']('HPFSECRET')}}
+      - HIVEID: {{salt['pillar.get']('HIVEID')}}
     - replace: true
     - port_bindings:
       - 3389:3389
     - binds: /etc/pyrdp/:/home/pyrdp/pyrdp_output
-    - command: pyrdp-mitm.py {{salt['pillar.get']('WINDOWSTARGET')}}
+    - command: pyrdp-mitm.py -s {{salt['pillar.get']('HIVEID')}} {{salt['pillar.get']('WINDOWSTARGET')}}
