@@ -14,7 +14,7 @@ create_dir:
 pyrdp_container:
   docker_container.running:
     - name: honeypot_pyrdp
-    - image: gosecure/pyrdp
+    - image: gosecure/pyrdp:latest
     - replace: true
     - port_bindings:
       - 3389:3389
