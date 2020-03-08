@@ -6,5 +6,5 @@
     "pillar": [
         ["WINDOWSTARGET", "192.168.1.1"]
     ],
-    "channels": ["pyrdp.sessions", "pyrdp.credentials"]
+    "channels": ["pyrdp.sessions", "pyrdp.credentials", "pyrdp.connections"]
 }
