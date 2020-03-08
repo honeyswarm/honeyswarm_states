@@ -12,7 +12,7 @@ create_dir:
 pyrdp_container:
   docker_container.running:
     - name: honeypot_pyrdp
-    - image: gosecure/pyrdp:latest
+    - image: honeyswarm/honeyswarm_pyrdp:latest
     - environment:
       - HPFSERVER: {{salt['pillar.get']('HPFSERVER')}}
       - HPFPORT: {{salt['pillar.get']('HPFPORT')}}
