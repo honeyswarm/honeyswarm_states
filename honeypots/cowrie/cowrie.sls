@@ -13,7 +13,7 @@ ssh_config:
 # Add the config file
 /etc/cowrie/cowrie.cfg:
   file.managed:
-    - source: salt://honeypots/{{salt['pillar.get']('OBJECTID')}}/cowrie.cfg
+    - source: salt://honeypots/{{salt['pillar.get']('HONEYPOTID')}}/cowrie.cfg
     - makedirs: true
 
 # Modify the config file based on pillar
