@@ -21,7 +21,7 @@ import-docker-key:
 
 /etc/docker.lock:
   file.managed:
-    - source: salt://docker/docker.lock
+    - source: salt://frames/{{salt['pillar.get']('FRAMEID')}}/cowrie.cfg
 
 install_docker:
   pkg.installed:
