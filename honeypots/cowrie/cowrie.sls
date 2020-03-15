@@ -26,7 +26,7 @@ edit_config:
       - sed -i 's/HPFIDENT/{{salt['pillar.get']('HPFIDENT')}}/g' /etc/cowrie/cowrie.cfg
       - sed -i 's/HPFSECRET/{{salt['pillar.get']('HPFSECRET')}}/g' /etc/cowrie/cowrie.cfg
       - sed -i 's/COWRIEHOSTNAME/{{salt['pillar.get']('COWRIEHOSTNAME')}}/g' /etc/cowrie/cowrie.cfg
-      - sed -i 's/HIVEID/{{salt['pillar.get']('HIVEID')}}/g' /etc/cowrie/cowrie.cfg
+      - sed -i 's/INSTANCEID/{{salt['pillar.get']('INSTANCEID')}}/g' /etc/cowrie/cowrie.cfg
 
 # Wait for config file then start. 
 # Might be able to use onlyif / unless in place of wait
