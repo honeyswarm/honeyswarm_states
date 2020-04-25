@@ -1,0 +1,10 @@
+{
+    "name":"Http",
+    "honeypot_state_file":"http",
+    "honey_type":"HTTP",
+    "description":"Simple HTTP Honeypot, Logs all HTTP Methods will full request headers and payloads",
+    "pillar": [
+        ["SERVER_STRING", "random"]
+    ],
+    "channels": ["http.sessions"]
+}
