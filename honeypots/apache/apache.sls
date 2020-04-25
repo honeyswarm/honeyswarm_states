@@ -1,4 +1,4 @@
-# This state file deploys a cowrie honeypot
+# This state file deploys an Apache2 honeypot
 
 # https://docs.saltstack.com/en/latest/ref/states/all/salt.states.docker_container.html#salt.states.docker_container.run
 
