@@ -1,0 +1,10 @@
+{
+    "name":"Wordpress",
+    "honeypot_state_file":"wordpress",
+    "honey_type":"Wordpress",
+    "description":"High Interaction Wordpress honeypot",
+    "pillar": [
+        ["SERVER_STRING", "random"]
+    ],
+    "channels": ["wordpress.sessions"]
+}
