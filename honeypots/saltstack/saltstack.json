@@ -1,0 +1,10 @@
+{
+    "name":"SaltStack",
+    "honeypot_state_file":"saltstack",
+    "honey_type":"SaltStack",
+    "description":"low / medium interaction honeypot for SaltStack ZMQ ports",
+    "pillar": [
+        ["SERVER_STRING", "random"]
+    ],
+    "channels": ["saltstack.sessions"]
+}
