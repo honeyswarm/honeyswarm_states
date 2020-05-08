@@ -3,6 +3,7 @@
     "honeypot_state_file":"apache",
     "honey_type":"HTTP",
     "description":"Simple Apache2 HTTP Logger, Will log all HTTP Requests including any POST data",
+    "container_name": "honeyswarm_apache",
     "pillar": [
         []
     ],
