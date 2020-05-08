@@ -3,7 +3,7 @@
     "honeypot_state_file":"pyrdp",
     "honey_type":"RDP",
     "description":"PyRDP is a Python 3 Remote Desktop Protocol (RDP) Man-in-the-Middle (MITM) and library.",
-    "container_name": "honeyswarm_pyrdp",
+    "container_name": "honeypot_pyrdp",
     "pillar": [
         ["WINDOWSTARGET", "192.168.1.1"]
     ],

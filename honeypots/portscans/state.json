@@ -3,6 +3,6 @@
     "honeypot_state_file":"portscans",
     "honey_type":"PortScans",
     "description":"Low / Zero interaction honeypot to alert on port scans",
-    "container_name": "honeyswarm_portscans",
+    "container_name": "honeypot_portscans",
     "channels": ["ports.sessions"]
 }
