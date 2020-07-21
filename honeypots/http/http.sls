@@ -14,8 +14,11 @@ http_container:
       - HPFSECRET: {{salt['pillar.get']('HPFSECRET')}}
       - HIVEID: {{salt['pillar.get']('HIVEID')}}
       - SERVER_STRING: {{salt['pillar.get']('SERVER_STRING')}}
+      - USE_HTTPS: {{salt['pillar.get']('USE_HTTPS')}}
+      - HTTPS_CERT: {{salt['pillar.get']('HTTPS_CERT')}}
     - replace: true
     - force: true
     - port_bindings:
       - 80:80
+      - 443:443
     - binds: /etc/honeyswarm/apache/index.html:/var/www/html/index.html

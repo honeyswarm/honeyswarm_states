@@ -5,7 +5,9 @@
     "description":"Simple HTTP Honeypot, Logs all HTTP Methods will full request headers and payloads",
     "container_name": "honeypot_http",
     "pillar": [
-        ["SERVER_STRING", "random"]
+        ["SERVER_STRING", "random"],
+        ["USE_HTTPS", ""],
+        ["HTTPS_CERT", "/C=US/ST=IL/L=None/O=example.com/OU=domain/CN=example.com/emailAddress=me@example.com"]
     ],
     "channels": ["http.sessions"],
     "report_fields": ["http_path", "http_query", "http_method", "http_headers__User-Agent", "http_post"]
