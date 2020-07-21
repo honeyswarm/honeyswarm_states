@@ -7,5 +7,6 @@
     "pillar": [
         ["SERVER_STRING", "random"]
     ],
-    "channels": ["http.sessions"]
+    "channels": ["http.sessions"],
+    "report_fields": ["http_path", "http_query", "http_method", "http_headers__User-Agent", "http_post"]
 }

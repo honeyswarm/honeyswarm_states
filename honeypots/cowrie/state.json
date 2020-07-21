@@ -7,5 +7,6 @@
     "pillar": [
         ["COWRIEHOSTNAME", "Srv04"]
     ],
-    "channels": ["cowrie.sessions"]
+    "channels": ["cowrie.sessions"],
+    "report_fields": ["credentials", "urls", "loggedin", "protocol"]
 }

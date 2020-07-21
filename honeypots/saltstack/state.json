@@ -7,5 +7,6 @@
     "pillar": [
         ["SERVER_STRING", "random"]
     ],
-    "channels": ["saltstack.sessions"]
+    "channels": ["saltstack.sessions"],
+    "report_fields": ["rx_data__load__arg", "rx_data__load__cmd", "rx_data__load__fun"]
 }

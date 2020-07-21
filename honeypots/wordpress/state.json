@@ -7,5 +7,6 @@
     "pillar": [
         ["SERVER_STRING", "random"]
     ],
-    "channels": ["wordpress.sessions"]
+    "channels": ["wordpress.sessions"],
+    "report_fields": ["http_path", "http_query", "http_method", "http_headers__User-Agent", "http_post__log", "http_post__pwd"]
 }

@@ -5,5 +5,6 @@
     "description":"Conpot is an ICS honeypot with the goal to collect intelligence about the motives and methods of adversaries targeting industrial control systems",
     "container_name": "honeypot_conpot",
     "pillar": [],
-    "channels": ["conpot.sessions"]
+    "channels": ["conpot.sessions"],
+    "report_fields": []
 }

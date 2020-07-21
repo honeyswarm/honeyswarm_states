@@ -7,5 +7,6 @@
     "pillar": [
         ["CLUSTER_NAME", "sales_records"]
     ],
-    "channels": ["elastic.sessions"]
+    "channels": ["elastic.sessions"],
+    "report_fields": ["http_method", "http_query", "http_post", "http_headers__User-Agent"]
 }
