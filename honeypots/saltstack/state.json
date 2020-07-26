@@ -3,7 +3,7 @@
     "honeypot_state_file":"saltstack",
     "honey_type":"SaltStack",
     "description":"low / medium interaction honeypot for SaltStack ZMQ ports",
-    "container_name": "honeypot_saltstack",
+    "container_name": "honeyswarm_saltstack_honeypot",
     "pillar": [
         ["SERVER_STRING", "random"]
     ],

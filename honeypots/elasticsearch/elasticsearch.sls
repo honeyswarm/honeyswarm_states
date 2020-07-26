@@ -5,8 +5,8 @@
 
 http_container:
   docker_container.running:
-    - name: honeypot_elasticsearch
-    - image: honeyswarm/honeyswarm_elasticsearch
+    - name: honeyswarm_elasticsearch_honeypot
+    - image: honeyswarm/honeyswarm_elasticsearch_honeypot
     - environment:
       - HPFSERVER: {{salt['pillar.get']('HPFSERVER')}}
       - HPFPORT: {{salt['pillar.get']('HPFPORT')}}

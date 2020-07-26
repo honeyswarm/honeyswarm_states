@@ -3,7 +3,7 @@
     "honeypot_state_file":"http",
     "honey_type":"HTTP",
     "description":"Simple HTTP Honeypot, Logs all HTTP Methods with full request headers and payloads",
-    "container_name": "honeypot_http",
+    "container_name": "honeyswarm_http_honeypot",
     "pillar": [
         ["SERVER_STRING", "random"],
         ["USE_HTTPS", ""],

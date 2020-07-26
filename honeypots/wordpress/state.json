@@ -3,7 +3,7 @@
     "honeypot_state_file":"wordpress",
     "honey_type":"Wordpress",
     "description":"High Interaction Wordpress honeypot",
-    "container_name": "honeypot_wordpress",
+    "container_name": "honeyswarm_wordpress_honeypot",
     "pillar": [
         ["SERVER_STRING", "random"]
     ],

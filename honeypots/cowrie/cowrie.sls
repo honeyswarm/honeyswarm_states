@@ -32,8 +32,8 @@ edit_config:
 # Might be able to use onlyif / unless in place of wait
 wait for edit_config:
   docker_container.running:
-    - name: honeypot_cowrie
-    - image: honeyswarm/honeyswarm_cowrie
+    - name: honeyswarm_cowrie_honeypot
+    - image: honeyswarm/honeyswarm_cowrie_honeypot
     - replace: true
     - force: true
     - port_bindings:

@@ -5,8 +5,8 @@
 
 http_container:
   docker_container.running:
-    - name: honeypot_wordpress
-    - image: honeyswarm/honeyswarm_wordpress
+    - name: honeyswarm_wordpress_honeypot
+    - image: honeyswarm/honeyswarm_wordpress_honeypot
     - environment:
       - HPFSERVER: {{salt['pillar.get']('HPFSERVER')}}
       - HPFPORT: {{salt['pillar.get']('HPFPORT')}}

@@ -3,7 +3,7 @@
     "honeypot_state_file":"elasticsearch",
     "honey_type":"ElasticSearch",
     "description":"High Interaction ElasticSearch honeypot",
-    "container_name": "honeypot_elasticsearch",
+    "container_name": "honeyswarm_elasticsearch_honeypot",
     "pillar": [
         ["CLUSTER_NAME", "sales_records"]
     ],
