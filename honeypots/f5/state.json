@@ -3,7 +3,7 @@
     "honeypot_state_file":"f5",
     "honey_type":"F5",
     "description":"Simple F5 BIGIP, Logs all HTTP Methods with full request headers and payloads",
-    "container_name": "honeypot_f5",
+    "container_name": "honeyswarm_f5_honeypot",
     "pillar": [],
     "channels": ["f5.sessions"],
     "report_fields": ["http_path", "http_query", "http_method", "http_headers__User-Agent", "http_post"]

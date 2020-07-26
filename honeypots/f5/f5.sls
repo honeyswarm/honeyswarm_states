@@ -5,8 +5,8 @@
 
 http_container:
   docker_container.running:
-    - name: honeypot_f5
-    - image: honeyswarm/honeyswarm_f5
+    - name: honeyswarm_f5_honeypot
+    - image: honeyswarm/honeyswarm_f5_honeypot
     - environment:
       - HPFSERVER: {{salt['pillar.get']('HPFSERVER')}}
       - HPFPORT: {{salt['pillar.get']('HPFPORT')}}
